@@ -18,6 +18,6 @@ def calculator():
     else:
         return "Невідома операція!"
 
-    return f"Результат: {result}"
+    return f"Результат: {Result}"
 
 print(calculator())
