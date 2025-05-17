@@ -6,4 +6,4 @@ name = (input("Ответ"))
 if name in users:
     print(f"{name} належить до вікової групи: {users[name]}")
 else:
-    print(f"Ім'я {name} не знайдено ")
+    print(f"Ім'я {name} не знайдено")
