@@ -1,30 +1,11 @@
-
-class Anim:
-    def __init__(self, ім'я, вік):
-        self.ім'я = ім'я
-        self.вік = вік
-
-    def Sound(self):
-        return "Ця тварина видає звук"
-
-    def Info(self):
-        return f"Ім'я: {self.ім'я}, Вік: {self.вік}"
+def login(username, password):
+    correct_username = "admin"
+    correct_password = "1234"
+    try:
+        assert username == correct_username and password == correct_password, "Невірне ім'я користувача або пароль"
+        print("Вхід виконано успішно")
+    except AssertionError as e:
+        print(e)
 
 
-class Dog(Anim):
-    def Sound(self):
-        return "Гав-гав!"
-
-
-class Cat(Anim):
-    def Sound(self):
-        return "Мяу!"
-
-
-Bars = Кіт("Барсик", 3)
-Sarik = Собака("Шарик", 5)
-
-print(барсик.інформація())
-print(барсик.звук())
-print(шарик.інформація())
-print(шарик.звук())
+login("admin", "1236")
